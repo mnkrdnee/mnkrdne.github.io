@@ -3,12 +3,9 @@ description: "Computer Science student | Blogs, Labs"
 author: "Munkh-Erdene.E"
 url: "https://mnkrdnee.github.io"
 theme: jekyll-theme-slate      
-nav:
-  - title: "About"
-    url: "/"
-  - title: "Blog"
-    url: "/blog/"
-  - title: "Labs"
-    url: "/labs/"
-  - title: "Certifications"
-    url: "/certs/"
+<div style="text-align:center; margin-bottom:20px;">
+  <a href="/" style="margin: 0 15px; color:#58a6ff; text-decoration:none;">About</a>
+  <a href="/blog/" style="margin: 0 15px; color:#58a6ff; text-decoration:none;">Blog</a>
+  <a href="/labs/" style="margin: 0 15px; color:#58a6ff; text-decoration:none;">Labs</a>
+  <a href="/certs/" style="margin: 0 15px; color:#58a6ff; text-decoration:none;">Certifications</a>
+</div>
