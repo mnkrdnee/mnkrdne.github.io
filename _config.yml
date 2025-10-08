@@ -3,3 +3,12 @@ description: "Computer Science student | Blogs, Labs"
 author: "Munkh-Erdene.E"
 url: "https://mnkrdnee.github.io"
 theme: jekyll-theme-slate      
+nav:
+  - title: "About"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Labs"
+    url: "/labs/"
+  - title: "Certifications"
+    url: "/certs/"
