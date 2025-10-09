@@ -2,6 +2,7 @@
 layout: default
 title: "About Me"
 ---
+{% include menu.html %}
 Hi, I'm Munkh-Erdene Erdenetogtokh
 
 I'm an undergraduate Computer Science student passionate about Computer Networking and Information Security.  
