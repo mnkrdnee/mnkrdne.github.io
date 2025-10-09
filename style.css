@@ -155,3 +155,26 @@ p {
   line-height: 1.8;
 }
 
+.contact {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.contact h2 {
+  color: #58a6ff;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  color: #c9d1d9;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
