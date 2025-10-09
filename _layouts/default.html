@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ site.head }}
 </head>
 <body>
   {% include nav.html %}
-  {{ content }}
+  <main class="content">
+    {{ content }}
+  </main>
 </body>
 </html>
