@@ -1,0 +1,25 @@
+<div class="menu-bar">
+  {% for item in site.nav %}
+    <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</div>
+
+<style>
+.menu-bar {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  background: #20232a;
+  border-bottom: 1px solid #30363d;
+}
+.menu-bar a {
+  margin: 0 15px;
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.menu-bar a:hover, .menu-bar a.active {
+  color: #1e90ff;
+  border-bottom: 2px solid #1e90ff;
+}
+</style>
