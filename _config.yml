@@ -1,5 +1,15 @@
 title: "Munkh-Erdene.E"
 description: "Computer Science student | Blogs, Labs"
+baseurl: ""
 url: "https://mnkrdnee.github.io"
 theme: jekyll-theme-slate      
 
+nav:
+  - name: "Home"
+    link: "/"
+  - name: "Blogs"
+    link: "/blogs/"
+  - name: "Labs"
+    link: "/labs/"
+  - name: "About"
+    link: "/about/"
