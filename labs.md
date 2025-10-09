@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Labs & Projects"
+title: Labs
+permalink: /labs/
 ---
 
 Labs & Projects
