@@ -1,34 +1,59 @@
-<nav class="navbar">
-  <ul>
-    {% for item in site.nav %}
-      <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
-    {% endfor %}
-  </ul>
+<nav class="nav-bar">
+  <div class="nav-container">
+    <a class="nav-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <ul class="nav-links">
+      {% for item in site.nav %}
+      <li><a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 </nav>
 
 <style>
-.navbar {
-  display: flex;
-  justify-content: center;
-  background: #111;
-  padding: 10px 0;
+.nav-bar {
+  background-color: #2b2b2b;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.6rem 0;
 }
 
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.nav-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar a {
-  color: #f0f0f0;
+.nav-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #f8f8f8;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.navbar a:hover {
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
   color: #1e90ff;
+}
+
+.nav-links a.active {
+  color: #1e90ff;
+  border-bottom: 2px solid #1e90ff;
 }
 </style>
