@@ -78,7 +78,7 @@ p {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 3rem 1rem 1.5rem 1rem;
 }
 
 .hero h1 {
@@ -117,7 +117,8 @@ p {
 /* Skills Section */
 .skills {
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;  /* smaller vertical spacing */
+  padding: 0 1rem;
 }
 
 .skills h2 {
@@ -126,22 +127,25 @@ p {
 }
 
 .skills ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 1.5rem;  /* Indent bullets */
 }
 
 .skills ul li {
-  display: inline-block;
-  margin: 0.5rem 1rem;
+  display: list-item;    /* vertical layout */
+  margin: 0.5rem 0;      /* space between items */
   font-weight: 500;
   color: #c9d1d9;
 }
 
+
 /* Intro Section */
 .intro {
   max-width: 700px;
-  margin: auto;
+ /* margin: auto; */
   text-align: center;
+  margin: 2rem 0;  /* smaller vertical spacing */
+  padding: 0 1rem;
 }
 
 .intro h2 {
@@ -157,7 +161,8 @@ p {
 
 .contact {
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;  /* smaller vertical spacing */
+  padding: 0 1rem;
 }
 
 .contact h2 {
